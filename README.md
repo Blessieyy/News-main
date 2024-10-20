@@ -68,3 +68,74 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# News App 📰
+This is a simple React News App that fetches the latest news articles from an external API (NewsAPI.org) and displays them in a user-friendly format. The app uses React's Context API for state management and Axios for HTTP requests.
+
+# Features
+Display the latest news articles.
+Fetch articles from different categories (e.g., general, business, sports).
+Responsive layout.
+Uses React Hooks (useContext, useEffect, useState) for managing state and lifecycle events.
+Getting Started
+Follow these instructions to set up and run the project on your local machine.
+
+Prerequisites
+You need to have the following installed:
+
+Node.js (v14.x or later)
+npm or yarn
+An API key from NewsAPI.org
+
+# Installation
+Clone the repository:
+git clone https://github.com/yourusername/news-app.git
+cd news-app
+Install dependencies:
+
+npm install
+Create a .env file in the root of the project and add your NewsAPI key:
+
+
+REACT_APP_NEWS_API_KEY=your_api_key_here
+Start the development server:
+
+
+npm start
+The app should now be running at http://localhost:3000.
+
+# Usage
+The app will automatically fetch the latest news articles when you load the page.
+You can switch categories to see articles from different news sections (requires integration of a category selector).
+Project Structure
+src/
+components/
+News.js: The main component that fetches and displays the news.
+NewsArticle.js: A component that displays individual news articles.
+context/
+NewsContext.js: A context provider that manages and provides the fetched news data.
+App.js: The root component that ties everything together.
+API
+This app uses the NewsAPI to fetch the latest headlines. You'll need an API key from NewsAPI to make requests.
+
+#Example API URL
+
+https://newsapi.org/v2/top-headlines?category=general&country=us&apiKey=your_api_key_here
+Technologies Used
+
+React: A JavaScript library for building user interfaces.
+Axios: A promise-based HTTP client for making API requests.
+Context API: For managing global state.
+CSS: For styling the app.
+
+
+#Future Improvements
+
+Add category filtering buttons to let users choose news categories.
+Improve error handling for API requests.
+Add pagination for more articles.
+Integrate additional news sources.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
